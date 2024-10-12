@@ -1,0 +1,44 @@
+**/node_modules/
+
+**/.env
+
+**/*.exe
+**/*.dll
+**/*.so
+**/*.dylib
+
+# runtime data
+**/*.log
+**/*.log.*
+**/*.pid
+**/*.seed
+**/*.pid.lock
+
+# OS
+**/.DS_Store
+**/.vscode/
+**/.idea/
+**/*.iml
+**/.venv/
+**/.pytest_cache/
+**/__pycache__/
+**/.pytest_cache/
+
+# docker 
+/build/
+/dist/
+/out/
+
+# dependency lock
+**/yarn.lock
+**/package-lock.json
+
+**/docs/
+
+**/build/
+**/dist/
+**/out/
+
+# user-specific IDE settings
+**/.vscode/
+**/.idea/
