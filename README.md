@@ -1,24 +1,33 @@
-<p>
-  <img src="https://github.com/EASS-HIT-PART-A-2024-CLASS-IV/BookWise/blob/main/frontend/public/favicon.ico" alt="Project Logo" width="70" height="70" /> <strong>BookWise</strong>
-</p>
+ # BookWise   <img src="https://github.com/EASS-HIT-PART-A-2024-CLASS-IV/BookWise/blob/main/frontend/public/favicon.ico" alt="Project Logo" width="50" height="50" />
+
+BookWise is a microservice-based book management system designed to allow users explore, save, and manage their favorite books.
+
+## Microservices
+
+### 1. Backend (Python FastAPI)
+Provides a RESTful API for user authentication, book search using Google Books API, and managing personal booklists.
+
+### 2. Frontend (React)
+Offers a dynamic and user-friendly interface. It allows users to search for books, manage their personal booklists, and handle user profiles. The React app interacts with the backend via API calls to fetch and display data, ensuring a responsive user experience.
+
+### 3. Database (MySQL)
+Stores user data and book information, ensuring reliable data management.
 
 
-
-# BookWise
-
-BookWise is a comprehensive book management system that provides users with the ability to explore, save, and manage their favorite books. Built using FastAPI for the backend, it offers a robust and efficient API for handling book data. Features include user authentication, book search, and user-specific booklists.
+### 4. Docker
+Used to containerize all components (backend, frontend, and database), making the system easy to deploy and maintain. Docker Compose facilitates the orchestration of these containers, ensuring they can communicate seamlessly within isolated environments. 
 
 ## Features
 
 - **User Authentication:** Secure login and registration system to manage user sessions.
-- **Book Search:** Leverage Google Books API to search for books by titles, authors, or ISBN.
+- **Book Search:** Leverage Google Books API to search for books by titles, authors etc.
 - **Personal Booklist:** Allows users to save their favorite books and manage their personal booklist.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Docker
+- Docker :whale2:
 - Docker Compose
 - Python 3.9 or newer
 
@@ -37,26 +46,25 @@ BookWise is a comprehensive book management system that provides users with the 
    docker-compose up --build
    ```
 
-   This command builds the application and starts the services defined in the `docker-compose.yml` file.
+2. **Enjoy! :dizzy: :open_book:**
 
-### Usage
-
-Once the application is running, you can access the FastAPI documentation to test the endpoints at: `http://localhost:8000/docs`.
+   The BookWise application is running and awaiting your use at: `http://localhost:3000`
+   
+   API documentation: `http://localhost:8000/docs`
 
 ### Testing
 
-Run the automated tests for the application using the following command:
+To ensure the quality and reliability of the backend service, we employ pytest for running our suite of automated tests. 
+Run the tests for the application using the following command:
 
 ```bash
 docker-compose run --rm backend pytest
 ```
 
-## Contributing
+## Demo
+Click the image to watch the project video demo:
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+[![Video Demo](frontend/src/images/Screenshot.png)](https://drive.google.com/file/d/1XBQS91OlSaluZQhlbI98PPIo7Q3YMAn1/view?usp=sharing)
+External link to the video: https://drive.google.com/file/d/1XBQS91OlSaluZQhlbI98PPIo7Q3YMAn1/view?usp=sharing
 
-Fork the project, create your feature branch, commit your changes, push to the branch, and open a pull request.
-
-## Contact
-
-- Project Link: [https://github.com/EASS-HIT-PART-A-2024-CLASS-IV/BookWise](https://github.com/EASS-HIT-PART-A-2024-CLASS-IV/BookWise)
+Enjoy exploring the site and get reading!
